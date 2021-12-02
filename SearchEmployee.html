@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+        
+        body{
+            background-color: gray;
+            color:black;
+             }
+        form{
+            margin: 0 auto;
+            width: 40%;
+            border-top: 3px solid blue;
+            border-bottom: 3px solid blue;
+            border-left: 3px solid blue;
+            border-right: 3px solid blue;
+            border-style: double;
+            border-radius: 15px;
+            height: auto;
+            font-size: 15px;
+             margin-top: 10%;
+             font-weight: bold;
+            background-color: white;
+            
+         }
+         h2{
+             margin-top: 30px;
+             font-family: Verdana, Geneva, Tahoma, sans-serif ;
+         }
+         label {
+                display: inline-block;
+                text-align: right;
+                width: 40%;
+                margin-top: 20px;
+                margin : 15px;
+                border:  hidden ;
+                }
+         input {
+            padding: 5px;
+            
+           
+         }
+         button {
+                margin-top: 20px;
+                border-radius: 3px;
+                padding: 5px;
+                width: 50%;
+                color: black;
+                font-family: Verdana, Geneva, Tahoma, sans-serif ;
+                background-color: lightblue;
+                border: hidden;
+                }
+            .btn{
+                text-align: right;
+                align-self: auto;
+                margin-right: 200px;
+                margin-bottom: 10px;
+               
+            }
+
+    </style>
+</head>
+<body>
+    <div>
+        <form class="form-horizontal" id="SearchForm">
+            <h2 style="text-align: center;">Employee Details</h2>
+            <div>
+                <label for="EmpID">Enter Employee ID : </label>
+                <input  type="text" id="EmpId" placeholder="Enter Emaployee ID here">
+            </div>
+             <div>
+                <label for="name">Employee Name : </label>
+                <input readonly  type="text" id="EmpName" >
+            </div>
+			
+            <div>
+                <label for="graduation">Role Name : </label>
+                <input readonly  type="text" id="RoleName" >
+            </div>
+            <div>
+                <label for="DateOfJoining">Date Of Joining : </label>
+                <input readonly  type="text" id="Date" >
+            </div>
+            <div class="btn">
+                <button type="click">Search Employee</button>
+            </div>
+         </form>
+    </div>
+
+    <script src="./search.js"></script>
+
+</body>
+</html>

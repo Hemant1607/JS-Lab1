@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <style>
+       
+        body{
+            background-color: gray;
+            color:black;
+             }
+        form{
+            margin: 0 auto;
+            width: 40%;
+            border-top: 3px solid blue;
+            border-bottom: 3px solid blue;
+            border-left: 3px solid blue;
+            border-right: 3px solid blue;
+            border-style: double;
+            border-radius: 15px;
+            height: auto;
+            font-size: 15px;
+             margin-top: 10%;
+             font-weight: bold;
+            background-color: white;
+            
+         }
+         h2{
+             margin-top: 30px;
+             font-family: Verdana, Geneva, Tahoma, sans-serif ;
+         }
+         label {
+                display: inline-block;
+                text-align: right;
+                width: 40%;
+                margin-top: 20px;
+                margin : 15px;
+                border:  hidden ;
+                }
+         input {
+            padding: 5px;
+            
+           
+         }
+         button {
+                margin-top: 20px;
+                border-radius: 3px;
+                padding: 5px;
+                width: 50%;
+                color: black;
+                font-family: Verdana, Geneva, Tahoma, sans-serif ;
+                background-color: lightblue;
+                border: hidden;
+                }
+            .btn{
+                text-align: right;
+                align-self: auto;
+                margin-right: 200px;
+                margin-bottom: 10px;
+               
+            }
+
+    </style>
+</head>
+<body>
+    <div>
+        <form class="form-horizontal" id="empForm">
+            <h2 style="text-align: center;">Add Employee</h2>
+             <div>
+                <label for="name">Enter Name : </label>
+                <input  type="text" name="Employee Name" id="Name"/>
+                <p id="nameError" style="text-align: center;"></p>
+            </div>
+			<div>
+                <label for="name">Enter Employee ID : </label>
+                <input  type="text" name="Employee ID" id="EmpId"/>
+                <p id="IdError" style="text-align: center;"></p>
+            </div>
+            <div>
+                <label for="graduation">Role Name : </label>
+                <select name="Role" id="role">
+                    <option value="" disabled selected hidden>Select Role</option>
+                    <option value="Junior Software Developer">Junior Software Developer</option>
+                    <option value="Senioe Software Developer">Senioe Software Developer</option>
+                    <option value="Junior Quality Analyst">Junior Quality Analyst</option>
+                    <option value="Senior Quality Analyst">Senior Quality Analyst</option>
+                    <option value="Business Analyst">Business Analyst</option>
+                    <option value="Team Lead">Team Lead</option>
+                    <option value="Manager">Manager</option>
+                </select>
+                <p id="roleError" style="text-align: center;"></p>
+            </div>
+            <div>
+                <label for="DateOfJoining">Date Of Joining : </label>
+                <input  type="date" id="dateOfJoining" placeholder="dd-----yyyy"/>
+            </div>
+            <div class="btn">
+                <button type="submit">Add Employee</button>
+            </div>
+         </form>
+    </div>
+    <script src="./storage.js"></script>
+
+</body>
+</html>
